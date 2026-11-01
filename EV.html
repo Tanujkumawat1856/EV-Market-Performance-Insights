@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EV Market Performance & Insights</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body { 
+            background-color: #f4f6f9; 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            color: #333;
+        }
+        .hero { 
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364); 
+            color: white; 
+            padding: 35px 20px; 
+            border-radius: 12px; 
+            margin-bottom: 30px; 
+            box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+        }
+        .kpi-card { 
+            background: white; 
+            border-radius: 10px; 
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05); 
+            padding: 22px 15px; 
+            margin-bottom: 25px; 
+            border-left: 5px solid #007bff;
+            transition: transform 0.2s ease;
+        }
+        .kpi-card:hover {
+            transform: translateY(-3px);
+        }
+        .kpi-card.green { border-left-color: #28a745; }
+        .kpi-card.teal { border-left-color: #17a2b8; }
+        .kpi-card.amber { border-left-color: #ffc107; }
+        .dashboard-container {
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            margin-bottom: 30px;
+        }
+        .scenario-card {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container my-4">
+        <!-- Hero Header -->
+        <div class="hero text-center">
+            <h1 class="fw-bold">Electric Vehicle Market Performance & Insights</h1>
+            <p class="lead mb-0">Interactive Executive Dashboard & Data Analytics Capstone</p>
+        </div>
+
+        <!-- Summary KPI Cards -->
+        <div class="row text-center mb-2">
+            <div class="col-md-3 col-sm-6">
+                <div class="kpi-card">
+                    <h6 class="text-muted fw-semibold mb-1">Vehicle Segments</h6>
+                    <h3 class="text-primary fw-bold mb-0">6 Categories</h3>
+                    <small class="text-muted">SUVs, Sedans, 2W & Buses</small>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="kpi-card green">
+                    <h6 class="text-muted fw-semibold mb-1">Key Chemistries</h6>
+                    <h3 class="text-success fw-bold mb-0">LFP, NMC, NCA</h3>
+                    <small class="text-muted">High Energy Density</small>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="kpi-card teal">
+                    <h6 class="text-muted fw-semibold mb-1">Avg Driving Range</h6>
+                    <h3 class="text-info fw-bold mb-0">420+ km</h3>
+                    <small class="text-muted">Efficiency Metrics</small>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="kpi-card amber">
+                    <h6 class="text-muted fw-semibold mb-1">Customer Sentiment</h6>
+                    <h3 class="text-warning fw-bold mb-0">4.3 / 5.0</h3>
+                    <small class="text-muted">Manufacturer Rating</small>
+                </div>
+            </div>
+        </div>
+
+        <!-- Live Tableau Dashboard Section -->
+        <div class="dashboard-container">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <h4 class="fw-bold text-dark mb-0">📊 Interactive 3x3 Tableau Dashboard</h4>
+                <a href="https://public.tableau.com/app/profile/tanuj.kumawat/viz/EVMarketPerformanceInsights_17935530961800/Dashboard1" target="_blank" class="btn btn-sm btn-outline-primary fw-semibold">Open Fullscreen ↗</a>
+            </div>
+            <div class="ratio ratio-16x9">
+                <iframe src="https://public.tableau.com/views/EVMarketPerformanceInsights_17935530961800/Dashboard1?:showVizHome=no&:embed=true" allowfullscreen style="border:0; border-radius: 8px;"></iframe>
+            </div>
+        </div>
+
+        <!-- Business Scenarios Covered -->
+        <h4 class="fw-bold mb-3 text-dark">🎯 Business Scenarios Addressed</h4>
+        <div class="row g-3 mb-4">
+            <div class="col-md-4">
+                <div class="scenario-card">
+                    <h5 class="fw-bold text-primary">1. Market Strategy</h5>
+                    <p class="text-muted small">Evaluates sales contribution and volume shifts across Sedans, SUVs, Two-Wheelers, and Commercial EVs to guide market expansion.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="scenario-card">
+                    <h5 class="fw-bold text-success">2. Manufacturer Intelligence</h5>
+                    <p class="text-muted small">Benchmarking top EV brands by annual production volume, regional manufacturing hubs, and customer satisfaction ratings.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="scenario-card">
+                    <h5 class="fw-bold text-info">3. Battery Tech Research</h5>
+                    <p class="text-muted small">Comparing LFP, NMC, and NCA chemistries against driving ranges and pricing efficiency to forecast sustainable adoption trends.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="text-center py-3 text-muted border-top">
+            <small>EV Market Performance & Insights Capstone Project | Hosted via GitHub Pages</small>
+        </footer>
+
+    </div>
+
+</body>
+</html>
