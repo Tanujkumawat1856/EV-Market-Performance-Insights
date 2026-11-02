@@ -7,49 +7,52 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body { background-color: #f8f9fa; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
-        .hero { background: linear-gradient(135deg, #1e3c72, #2a5298); color: white; padding: 30px 20px; border-radius: 8px; margin-bottom: 25px; }
-        .kpi-card { background: white; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); padding: 20px; margin-bottom: 20px; }
+        .hero { background: linear-gradient(135deg, #1e3c72, #2a5298); color: white; padding: 30px 20px; border-radius: 8px; margin-bottom: 25px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+        .kpi-card { background: white; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); padding: 20px; margin-bottom: 20px; border-top: 4px solid #2a5298; }
+        .dashboard-container { background: white; border-radius: 8px; padding: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); margin-bottom: 25px; }
     </style>
 </head>
 <body>
     <div class="container my-4">
+        <!-- Hero Header -->
         <div class="hero text-center">
             <h1>Electric Vehicle Market Performance & Insights</h1>
             <p class="lead">Interactive Executive Dashboard & Analytics for Decision-Making</p>
         </div>
 
+        <!-- KPI Summary Cards -->
         <div class="row text-center mb-4">
             <div class="col-md-3">
                 <div class="kpi-card">
-                    <h6 class="text-muted">Total Categories</h6>
-                    <h3 class="text-primary">6 Segments</h3>
+                    <h6 class="text-muted text-uppercase fs-6">Total Categories</h6>
+                    <h3 class="text-primary fw-bold">6 Segments</h3>
                 </div>
             </div>
             <div class="col-md-3">
                 <div class="kpi-card">
-                    <h6 class="text-muted">Leading Chemistries</h6>
-                    <h3 class="text-success">LFP, NMC, Solid-State</h3>
+                    <h6 class="text-muted text-uppercase fs-6">Leading Chemistries</h6>
+                    <h3 class="text-success fw-bold">LFP, NMC, Solid-State</h3>
                 </div>
             </div>
             <div class="col-md-3">
                 <div class="kpi-card">
-                    <h6 class="text-muted">Avg Range</h6>
-                    <h3 class="text-info">420+ km</h3>
+                    <h6 class="text-muted text-uppercase fs-6">Avg Range</h6>
+                    <h3 class="text-info fw-bold">420+ km</h3>
                 </div>
             </div>
             <div class="col-md-3">
                 <div class="kpi-card">
-                    <h6 class="text-muted">Avg Customer Rating</h6>
-                    <h3 class="text-warning">4.3 / 5.0</h3>
+                    <h6 class="text-muted text-uppercase fs-6">Avg Customer Rating</h6>
+                    <h3 class="text-warning fw-bold">4.3 / 5.0</h3>
                 </div>
             </div>
         </div>
 
         <!-- Tableau Dashboard Embed Container -->
-        <div class="card p-3 shadow-sm mb-4">
-            <h5 class="card-title text-secondary mb-3">Tableau Interactive Visualizations</h5>
+        <div class="dashboard-container">
+            <h4 class="text-secondary fw-bold mb-3">📊 Tableau Interactive Visualizations Suite</h4>
             <div class="ratio ratio-16x9">
-                <iframe src="https://public.tableau.com/views/EVMarketPerformanceInsights_17935530961800/Dashboard1?:showVizHome=no&:embed=true" allowfullscreen></iframe>
+                <iframe src="https://public.tableau.com/views/EVMarketPerformanceInsights_17935558961800/Dashboard1?:showVizHome=no&:embed=true" allowfullscreen></iframe>
             </div>
         </div>
     </div>
